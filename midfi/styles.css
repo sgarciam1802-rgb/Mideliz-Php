@@ -1,0 +1,31 @@
+    /* Hover underline effect for nav links */
+    .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #f87171; /* Tailwind red-400 */
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #f87171;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    /* Button hover effect */
+    .btn-cta {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-cta:hover {
+      background-color: #ef4444; /* Tailwind red-500 */
+      transform: scale(1.05);
+    }
+
+    
